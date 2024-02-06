@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drop down propesonal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="midil.css">
+    <link rel="stylesheet" href="responciv.css">
+    <link rel="stylesheet" href="small.css">
+    <link rel="stylesheet" href="media/css/all.min.css">
+    <link rel="stylesheet" href="media/css/fontawesome.min.css">
+</head>
+<body>
+ <div class="three"><a href="#"><i class="fas fa-align-justify"></i></a></div>
+  <div class="menu">
+      <ul id="onul">
+          <li><a href="">Home<i class="fas fa-home fa-1x"></i></a></li>
+          <li><a href="">About<i class="far fa-address-card fa-1x"></i></a></li>
+          <li id="r"><a href="">Contack<i class="fas fa-phone fa-1x"></i><i id="j" class="fas fa-chevron-right"></i></a>
+              <ul>
+                  <li>Home</li>
+                  <li>Home</li>
+                  <li>Home<i class="fas fa-chevron-right"></i>
+                      <ul>
+                          <li>Call</li>
+                          <li>Call</li>
+                          <li>Call</li>
+                          <li>Call</li>
+                          <li>Call</li>
+                      </ul>
+                  </li>
+                  <li>Home</li>
+                  <li>Home</li>
+              </ul>
+          </li>
+          <li><a href="">Help<i class="fas fa-hands-helping fa-1x"></i></a></li>
+          <li><a href="">Seting<i class="fas fa-cogs fa-1x"></i></a></li>
+      </ul>
+  </div>  
+  
+  <!--jQuery-->
+  
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+      (function($){
+          $(document).ready(function(){
+              $('.three a').click(function(){
+                  $('.menu #onul').slideToggle()
+              });
+                            });
+      })(jQuery)
+   
+    
+    </script>
+</body>
+</html>

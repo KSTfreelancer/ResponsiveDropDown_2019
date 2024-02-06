@@ -1,0 +1,66 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(to left,#ff3000,#ff9a00);
+    background-size: cover;
+}
+.three{
+    display: none;
+}
+.menu ul li{
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+    background-image: linear-gradient(to left,#ff3000,#ff9a00);
+    font-family: Baskerville Old Face;
+    position: relative;
+       
+    
+}
+.menu ul li a{
+    text-decoration: none;
+     color: white;
+    
+}
+.menu ul li a i{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu ul li:hover{
+    background-image: linear-gradient(to left,red,#ff9a00,red);
+    color: white;
+    
+}
+.menu ul ul ul{
+    margin-left: 200px;
+    position: absolute;
+    top: 0px;
+}
+.menu ul ul{
+    display:none;
+}
+.menu ul li:hover > ul{display: block;}
+.menu ul ul li i{
+  float: right;
+    line-height: 50px;
+}
+
+.menu #j{
+    float: right;
+    line-height: 50px;
+}
+.menu ul :hover #j{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.menu ul ul :hover i{
+    transform: rotate(360deg);
+    transition: .5s;
+}
